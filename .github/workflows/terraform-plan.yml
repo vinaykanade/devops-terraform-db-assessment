@@ -46,7 +46,7 @@ jobs:
       - name: Terraform Validate
         run: terraform validate
 
-      - - name: Terraform Plan
+       - name: Terraform Plan
   run: terraform plan -refresh=false -lock=false -var="ci_mode=true"
 
   terraform-prod:
@@ -80,5 +80,5 @@ jobs:
       - name: Terraform Validate
         run: terraform validate
 
-      - - name: Terraform Plan
+       - name: Terraform Plan
   run: terraform plan -refresh=false -lock=false -var="ci_mode=true"
