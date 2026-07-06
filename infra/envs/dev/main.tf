@@ -10,7 +10,9 @@ terraform {
 }
 
 provider "aws" {
-  region = var.aws_region
+  region                      = var.aws_region
+  skip_credentials_validation = var.ci_mode
+  skip_requesting_account_id  = var.ci_mode
 }
 
 module "network" {
