@@ -78,3 +78,8 @@ variable "deletion_protection" {
 variable "skip_final_snapshot" {
   type = bool
 }
+variable "ci_mode" {
+  description = "Skip AWS account validation for plan-only CI"
+  type        = bool
+  default     = false
+}

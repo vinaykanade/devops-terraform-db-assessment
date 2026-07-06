@@ -44,3 +44,4 @@ scripts/
 .github/workflows/
 docker-compose.yml
 README.md
+CI test branch for Terraform workflow verification.
